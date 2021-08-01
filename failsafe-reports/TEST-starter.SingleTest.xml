@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report.xsd" name="starter.SingleTest" time="146.687" tests="29" errors="10" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\Users\Daniel-Morgan\Downloads\serenity-cucumber4-master-X\serenity-cucumber4-master\target\test-classes;D:\Users\Daniel-Morgan\Downloads\serenity-cucumber4-master-X\serenity-cucumber4-master\target\serenity-cucumber4-starter-1.0.0-SNAPSHOT.jar;D:\Users\Daniel-Morgan\.m2\repository\ch\qos\logback\logback-classic\1.0.13\logback-classic-1.0.13.jar;D:\Users\Daniel-Morgan\.m2\repository\ch\qos\logback\logback-core\1.0.13\logback-core-1.0.13.jar;D:\Users\Daniel-Morgan\.m2\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar;D:\Users\Daniel-Morgan\.m2\repository\net\serenity-bdd\serenity-core\2.0.40\serenity-core-2.0.40.jar;D:\Users\Daniel-Morgan\.m2\repository\net\bytebuddy\byte-buddy\1.9.6\byte-buddy-1.9.6.jar;D:\Users\Daniel-Morgan\.m2\repository\net\bytebuddy\byte-buddy-agent\1.9.6\byte-buddy-agent-1.9.6.jar;D:\Users\Daniel-Morgan\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;D:\Users\Daniel-Morgan\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;D:\Users\Daniel-Morgan\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;D:\Users\Daniel-Morgan\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;D:\Users\Daniel-Morgan\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;D:\Users\Daniel-Morgan\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;D:\Users\Daniel-Morgan\.m2\repository\com\google\inject\guice\4.2.2\guice-4.2.2.jar;D:\Users\Daniel-Morgan\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;D:\Users\Daniel-Morgan\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;D:\Users\Daniel-Morgan\.m2\repository\cglib\cglib\3.2.5\cglib-3.2.5.jar;D:\Users\Daniel-Morgan\.m2\repository\org\ow2\asm\asm\5.0.3\asm-5.0.3.jar;D:\Users\Daniel-Morgan\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;D:\Users\Daniel-Morgan\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;D:\Users\Daniel-Morgan\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;D:\Users\Daniel-Morgan\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;D:\Users\Daniel-Morgan\.m2\repository\io\vavr\vavr\0.9.0\vavr-0.9.0.jar;D:\Users\Daniel-Morgan\.m2\repository\io\vavr\vavr-match\0.9.0\vavr-match-0.9.0.jar;D:\Users\Daniel-Morgan\.m2\repository\javax\xml\bind\jaxb-api\2.2.12\jaxb-api-2.2.12.jar;D:\Users\Daniel-Morgan\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar;D:\Users\Daniel-Morgan\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.0.1\jaxb-impl-2.3.0.1.jar;D:\Users\Daniel-Morgan\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;D:\Users\Daniel-Morgan\.m2\repository\org\mockito\mockito-core\2.23.4\mockito-core-2.23.4.jar;D:\Users\Daniel-Morgan\.m2\repository\net\serenity-bdd\serenity-report-resources\2.0.40\serenity-report-resources-2.0.40.jar;D:\Users\Daniel-Morgan\.m2\repository\net\serenity-bdd\serenity-model\2.0.40\serenity-model-2.0.40.jar;D:\Users\Daniel-Morgan\.m2\repository\commons-net\commons-net\3.6\commons-net-3.6.jar;D:\Users\Daniel-Morgan\.m2\repository\org\apache\commons\commons-text\1.6\commons-text-1.6.jar;D:\Users\Daniel-Morgan\.m2\repository\net\serenity-bdd\serenity-reports\2.0.40\serenity-reports-2.0.40.jar;D:\Users\Daniel-Morgan\.m2\repository\net\serenity-bdd\serenity-stats\2.0.40\serenity-stats-2.0.40.jar;D:\Users\Daniel-Morgan\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.2.51\kotlin-stdlib-1.2.51.jar;D:\Users\Daniel-Morgan\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.2.51\kotlin-stdlib-common-1.2.51.jar;D:\Users\Daniel-Morgan\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;D:\Users\Daniel-Morgan\.m2\repository\com\google\code\gson\gson\2.8.4\gson-2.8.4.jar;D:\Users\Daniel-Morgan\.m2\repository\org\seleniumhq\selenium\selenium-server\3.141.59\selenium-server-3.141.59.jar;D:\Users\Daniel-Morgan\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;D:\Users\Daniel-Morgan\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;D:\Users\Daniel-Morgan\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;D:\Users\Daniel-Morgan\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;D:\Users\Daniel-Morgan\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;D:\Users\Daniel-Morgan\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.4.12.v20180830\jetty-repacked-9.4.12.v20180830.jar;D:\Users\Daniel-Morgan\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;D:\Users\Daniel-Morgan\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;D:\Users\Daniel-Morgan\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;D:\Users\Daniel-Morgan\.m2\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;D:\Users\Daniel-Morgan\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;D:\Users\Daniel-Morgan\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;D:\Users\Daniel-Morgan\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;D:\Users\Daniel-Morgan\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;D:\Users\Daniel-Morgan\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;D:\Users\Daniel-Morgan\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;D:\Users\Daniel-Morgan\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;D:\Users\Daniel-Morgan\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;D:\Users\Daniel-Morgan\.m2\repository\com\paulhammant\ngwebdriver\1.1.4\ngwebdriver-1.1.4.jar;D:\Users\Daniel-Morgan\.m2\repository\com\codeborne\phantomjsdriver\1.4.4\phantomjsdriver-1.4.4.jar;D:\Users\Daniel-Morgan\.m2\repository\org\eclipse\jetty\jetty-util\9.4.8.v20171121\jetty-util-9.4.8.v20171121.jar;D:\Users\Daniel-Morgan\.m2\repository\org\eclipse\jetty\jetty-io\9.4.8.v20171121\jetty-io-9.4.8.v20171121.jar;D:\Users\Daniel-Morgan\.m2\repository\org\seleniumhq\selenium\htmlunit-driver\2.33.1\htmlunit-driver-2.33.1.jar;D:\Users\Daniel-Morgan\.m2\repository\io\appium\java-client\6.1.0\java-client-6.1.0.jar;D:\Users\Daniel-Morgan\.m2\repository\commons-validator\commons-validator\1.6\commons-validator-1.6.jar;D:\Users\Daniel-Morgan\.m2\repository\commons-beanutils\commons-beanutils\1.9.2\commons-beanutils-1.9.2.jar;D:\Users\Daniel-Morgan\.m2\repository\commons-digester\commons-digester\1.8.1\commons-digester-1.8.1.jar;D:\Users\Daniel-Morgan\.m2\repository\org\springframework\spring-context\5.0.5.RELEASE\spring-context-5.0.5.RELEASE.jar;D:\Users\Daniel-Morgan\.m2\repository\org\springframework\spring-aop\5.0.5.RELEASE\spring-aop-5.0.5.RELEASE.jar;D:\Users\Daniel-Morgan\.m2\repository\org\springframework\spring-beans\5.0.5.RELEASE\spring-beans-5.0.5.RELEASE.jar;D:\Users\Daniel-Morgan\.m2\repository\org\springframework\spring-core\5.0.5.RELEASE\spring-core-5.0.5.RELEASE.jar;D:\Users\Daniel-Morgan\.m2\repository\org\springframework\spring-jcl\5.0.5.RELEASE\spring-jcl-5.0.5.RELEASE.jar;D:\Users\Daniel-Morgan\.m2\repository\org\springframework\spring-expression\5.0.5.RELEASE\spring-expression-5.0.5.RELEASE.jar;D:\Users\Daniel-Morgan\.m2\repository\org\aspectj\aspectjweaver\1.9.1\aspectjweaver-1.9.1.jar;D:\Users\Daniel-Morgan\.m2\repository\org\openpnp\opencv\3.2.0-1\opencv-3.2.0-1.jar;D:\Users\Daniel-Morgan\.m2\repository\org\glassfish\tyrus\tyrus-core\1.13.1\tyrus-core-1.13.1.jar;D:\Users\Daniel-Morgan\.m2\repository\org\glassfish\tyrus\tyrus-spi\1.13.1\tyrus-spi-1.13.1.jar;D:\Users\Daniel-Morgan\.m2\repository\javax\websocket\javax.websocket-api\1.1\javax.websocket-api-1.1.jar;D:\Users\Daniel-Morgan\.m2\repository\org\codehaus\groovy\groovy\2.5.5\groovy-2.5.5.jar;D:\Users\Daniel-Morgan\.m2\repository\net\sf\opencsv\opencsv\2.0\opencsv-2.0.jar;D:\Users\Daniel-Morgan\.m2\repository\commons-beanutils\commons-beanutils-core\1.8.3\commons-beanutils-core-1.8.3.jar;D:\Users\Daniel-Morgan\.m2\repository\joda-time\joda-time\2.7\joda-time-2.7.jar;D:\Users\Daniel-Morgan\.m2\repository\com\thoughtworks\xstream\xstream\1.4.9\xstream-1.4.9.jar;D:\Users\Daniel-Morgan\.m2\repository\xmlpull\xmlpull\1.1.3.1\xmlpull-1.1.3.1.jar;D:\Users\Daniel-Morgan\.m2\repository\xpp3\xpp3_min\1.1.4c\xpp3_min-1.1.4c.jar;D:\Users\Daniel-Morgan\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;D:\Users\Daniel-Morgan\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;D:\Users\Daniel-Morgan\.m2\repository\org\freemarker\freemarker\2.3.28\freemarker-2.3.28.jar;D:\Users\Daniel-Morgan\.m2\repository\net\sourceforge\jexcelapi\jxl\2.6.12\jxl-2.6.12.jar;D:\Users\Daniel-Morgan\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;D:\Users\Daniel-Morgan\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;D:\Users\Daniel-Morgan\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.33\htmlunit-2.33.jar;D:\Users\Daniel-Morgan\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.33\htmlunit-core-js-2.33.jar;D:\Users\Daniel-Morgan\.m2\repository\net\sourceforge\htmlunit\neko-htmlunit\2.33\neko-htmlunit-2.33.jar;D:\Users\Daniel-Morgan\.m2\repository\xerces\xercesImpl\2.12.0\xercesImpl-2.12.0.jar;D:\Users\Daniel-Morgan\.m2\repository\net\sourceforge\htmlunit\htmlunit-cssparser\1.2.0\htmlunit-cssparser-1.2.0.jar;D:\Users\Daniel-Morgan\.m2\repository\org\eclipse\jetty\websocket\websocket-client\9.4.12.v20180830\websocket-client-9.4.12.v20180830.jar;D:\Users\Daniel-Morgan\.m2\repository\org\eclipse\jetty\jetty-client\9.4.12.v20180830\jetty-client-9.4.12.v20180830.jar;D:\Users\Daniel-Morgan\.m2\repository\org\eclipse\jetty\jetty-http\9.4.12.v20180830\jetty-http-9.4.12.v20180830.jar;D:\Users\Daniel-Morgan\.m2\repository\org\eclipse\jetty\jetty-xml\9.4.12.v20180830\jetty-xml-9.4.12.v20180830.jar;D:\Users\Daniel-Morgan\.m2\repository\org\eclipse\jetty\websocket\websocket-common\9.4.12.v20180830\websocket-common-9.4.12.v20180830.jar;D:\Users\Daniel-Morgan\.m2\repository\org\eclipse\jetty\websocket\websocket-api\9.4.12.v20180830\websocket-api-9.4.12.v20180830.jar;D:\Users\Daniel-Morgan\.m2\repository\org\apache\httpcomponents\httpclient\4.5.5\httpclient-4.5.5.jar;D:\Users\Daniel-Morgan\.m2\repository\org\apache\httpcomponents\httpcore\4.4.9\httpcore-4.4.9.jar;D:\Users\Daniel-Morgan\.m2\repository\org\apache\httpcomponents\httpmime\4.5.5\httpmime-4.5.5.jar;D:\Users\Daniel-Morgan\.m2\repository\org\fluentlenium\fluentlenium-core\0.10.2\fluentlenium-core-0.10.2.jar;D:\Users\Daniel-Morgan\.m2\repository\com\jhlabs\filters\2.0.235\filters-2.0.235.jar;D:\Users\Daniel-Morgan\.m2\repository\org\asciidoctor\asciidoctorj\1.5.6\asciidoctorj-1.5.6.jar;D:\Users\Daniel-Morgan\.m2\repository\org\jruby\jruby-complete\1.7.26\jruby-complete-1.7.26.jar;D:\Users\Daniel-Morgan\.m2\repository\org\imgscalr\imgscalr-lib\4.2\imgscalr-lib-4.2.jar;D:\Users\Daniel-Morgan\.m2\repository\javax\el\javax.el-api\2.2.4\javax.el-api-2.2.4.jar;D:\Users\Daniel-Morgan\.m2\repository\org\glassfish\web\javax.el\2.2.4\javax.el-2.2.4.jar;D:\Users\Daniel-Morgan\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;D:\Users\Daniel-Morgan\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;D:\Users\Daniel-Morgan\.m2\repository\org\awaitility\awaitility\3.1.0\awaitility-3.1.0.jar;D:\Users\Daniel-Morgan\.m2\repository\com\typesafe\config\1.3.1\config-1.3.1.jar;D:\Users\Daniel-Morgan\.m2\repository\org\jsoup\jsoup\1.10.3\jsoup-1.10.3.jar;D:\Users\Daniel-Morgan\.m2\repository\com\google\jimfs\jimfs\1.1\jimfs-1.1.jar;D:\Users\Daniel-Morgan\.m2\repository\es\nitaur\markdown\txtmark\0.16\txtmark-0.16.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-all\0.34.30\flexmark-all-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark\0.34.30\flexmark-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-abbreviation\0.34.30\flexmark-ext-abbreviation-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-admonition\0.34.30\flexmark-ext-admonition-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-anchorlink\0.34.30\flexmark-ext-anchorlink-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-aside\0.34.30\flexmark-ext-aside-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-attributes\0.34.30\flexmark-ext-attributes-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-autolink\0.34.30\flexmark-ext-autolink-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\org\nibor\autolink\autolink\0.6.0\autolink-0.6.0.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-definition\0.34.30\flexmark-ext-definition-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-emoji\0.34.30\flexmark-ext-emoji-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-enumerated-reference\0.34.30\flexmark-ext-enumerated-reference-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-escaped-character\0.34.30\flexmark-ext-escaped-character-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-footnotes\0.34.30\flexmark-ext-footnotes-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-issues\0.34.30\flexmark-ext-gfm-issues-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-strikethrough\0.34.30\flexmark-ext-gfm-strikethrough-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-tables\0.34.30\flexmark-ext-gfm-tables-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-tasklist\0.34.30\flexmark-ext-gfm-tasklist-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-users\0.34.30\flexmark-ext-gfm-users-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-gitlab\0.34.30\flexmark-ext-gitlab-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-front-matter\0.34.30\flexmark-ext-jekyll-front-matter-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-tag\0.34.30\flexmark-ext-jekyll-tag-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-media-tags\0.34.30\flexmark-ext-media-tags-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-test-util\0.34.30\flexmark-test-util-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-ins\0.34.30\flexmark-ext-ins-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-xwiki-macros\0.34.30\flexmark-ext-xwiki-macros-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-superscript\0.34.30\flexmark-ext-superscript-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-tables\0.34.30\flexmark-ext-tables-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-toc\0.34.30\flexmark-ext-toc-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-typographic\0.34.30\flexmark-ext-typographic-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-wikilink\0.34.30\flexmark-ext-wikilink-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-yaml-front-matter\0.34.30\flexmark-ext-yaml-front-matter-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-youtube-embedded\0.34.30\flexmark-ext-youtube-embedded-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-formatter\0.34.30\flexmark-formatter-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-html-parser\0.34.30\flexmark-html-parser-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-jira-converter\0.34.30\flexmark-jira-converter-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-pdf-converter\0.34.30\flexmark-pdf-converter-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\openhtmltopdf\openhtmltopdf-core\0.0.1-RC13\openhtmltopdf-core-0.0.1-RC13.jar;D:\Users\Daniel-Morgan\.m2\repository\com\openhtmltopdf\openhtmltopdf-pdfbox\0.0.1-RC13\openhtmltopdf-pdfbox-0.0.1-RC13.jar;D:\Users\Daniel-Morgan\.m2\repository\org\apache\pdfbox\pdfbox\2.0.8\pdfbox-2.0.8.jar;D:\Users\Daniel-Morgan\.m2\repository\org\apache\pdfbox\fontbox\2.0.8\fontbox-2.0.8.jar;D:\Users\Daniel-Morgan\.m2\repository\org\apache\pdfbox\xmpbox\2.0.8\xmpbox-2.0.8.jar;D:\Users\Daniel-Morgan\.m2\repository\de\rototor\pdfbox\graphics2d\0.12\graphics2d-0.12.jar;D:\Users\Daniel-Morgan\.m2\repository\com\openhtmltopdf\openhtmltopdf-rtl-support\0.0.1-RC13\openhtmltopdf-rtl-support-0.0.1-RC13.jar;D:\Users\Daniel-Morgan\.m2\repository\com\ibm\icu\icu4j\59.1\icu4j-59.1.jar;D:\Users\Daniel-Morgan\.m2\repository\com\openhtmltopdf\openhtmltopdf-jsoup-dom-converter\0.0.1-RC13\openhtmltopdf-jsoup-dom-converter-0.0.1-RC13.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-profile-pegdown\0.34.30\flexmark-profile-pegdown-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-util\0.34.30\flexmark-util-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-youtrack-converter\0.34.30\flexmark-youtrack-converter-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;D:\Users\Daniel-Morgan\.m2\repository\io\cucumber\cucumber-java\4.2.0\cucumber-java-4.2.0.jar;D:\Users\Daniel-Morgan\.m2\repository\io\cucumber\cucumber-core\4.2.0\cucumber-core-4.2.0.jar;D:\Users\Daniel-Morgan\.m2\repository\io\cucumber\cucumber-html\0.2.7\cucumber-html-0.2.7.jar;D:\Users\Daniel-Morgan\.m2\repository\io\cucumber\gherkin\5.1.0\gherkin-5.1.0.jar;D:\Users\Daniel-Morgan\.m2\repository\io\cucumber\tag-expressions\1.1.1\tag-expressions-1.1.1.jar;D:\Users\Daniel-Morgan\.m2\repository\io\cucumber\cucumber-expressions\6.2.0\cucumber-expressions-6.2.0.jar;D:\Users\Daniel-Morgan\.m2\repository\io\cucumber\datatable\1.1.7\datatable-1.1.7.jar;D:\Users\Daniel-Morgan\.m2\repository\io\cucumber\datatable-dependencies\1.1.7\datatable-dependencies-1.1.7.jar;D:\Users\Daniel-Morgan\.m2\repository\io\cucumber\cucumber-junit\4.2.0\cucumber-junit-4.2.0.jar;D:\Users\Daniel-Morgan\.m2\repository\net\serenity-bdd\serenity-junit\2.0.40\serenity-junit-2.0.40.jar;D:\Users\Daniel-Morgan\.m2\repository\net\serenity-bdd\serenity-screenplay\2.0.40\serenity-screenplay-2.0.40.jar;D:\Users\Daniel-Morgan\.m2\repository\uk\com\robust-it\cloning\1.9.10\cloning-1.9.10.jar;D:\Users\Daniel-Morgan\.m2\repository\net\serenity-bdd\serenity-screenplay-webdriver\2.0.40\serenity-screenplay-webdriver-2.0.40.jar;D:\Users\Daniel-Morgan\.m2\repository\net\serenity-bdd\serenity-cucumber4\1.0.6\serenity-cucumber4-1.0.6.jar;D:\Users\Daniel-Morgan\.m2\repository\io\cucumber\datatable-matchers\1.1.7\datatable-matchers-1.1.7.jar;D:\Users\Daniel-Morgan\.m2\repository\org\apache\commons\commons-csv\1.5\commons-csv-1.5.jar;D:\Users\Daniel-Morgan\.m2\repository\junit\junit\4.12\junit-4.12.jar;D:\Users\Daniel-Morgan\.m2\repository\org\assertj\assertj-core\3.6.2\assertj-core-3.6.2.jar;D:\Users\Daniel-Morgan\.m2\repository\org\hamcrest\hamcrest-all\1.3\hamcrest-all-1.3.jar;"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Europe/London"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows Server 2016"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="GB"/>
+    <property name="taskID" value="MY_TEST_SCHEMA_1"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.10_9\bin"/>
+    <property name="sun.java.command" value="D:\Users\Daniel-Morgan\AppData\Local\Temp\1\surefire10761128196359162623\surefirebooter11880740567178801549.jar D:\Users\Daniel-Morgan\AppData\Local\Temp\1\surefire10761128196359162623 2021-07-07T13-20-32_300-jvmRun1 surefire2704954297990538691tmp surefire_03793357108914628892tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\Users\Daniel-Morgan\Downloads\serenity-cucumber4-master-X\serenity-cucumber4-master\target\test-classes;D:\Users\Daniel-Morgan\Downloads\serenity-cucumber4-master-X\serenity-cucumber4-master\target\serenity-cucumber4-starter-1.0.0-SNAPSHOT.jar;D:\Users\Daniel-Morgan\.m2\repository\ch\qos\logback\logback-classic\1.0.13\logback-classic-1.0.13.jar;D:\Users\Daniel-Morgan\.m2\repository\ch\qos\logback\logback-core\1.0.13\logback-core-1.0.13.jar;D:\Users\Daniel-Morgan\.m2\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar;D:\Users\Daniel-Morgan\.m2\repository\net\serenity-bdd\serenity-core\2.0.40\serenity-core-2.0.40.jar;D:\Users\Daniel-Morgan\.m2\repository\net\bytebuddy\byte-buddy\1.9.6\byte-buddy-1.9.6.jar;D:\Users\Daniel-Morgan\.m2\repository\net\bytebuddy\byte-buddy-agent\1.9.6\byte-buddy-agent-1.9.6.jar;D:\Users\Daniel-Morgan\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;D:\Users\Daniel-Morgan\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;D:\Users\Daniel-Morgan\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;D:\Users\Daniel-Morgan\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;D:\Users\Daniel-Morgan\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;D:\Users\Daniel-Morgan\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;D:\Users\Daniel-Morgan\.m2\repository\com\google\inject\guice\4.2.2\guice-4.2.2.jar;D:\Users\Daniel-Morgan\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;D:\Users\Daniel-Morgan\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;D:\Users\Daniel-Morgan\.m2\repository\cglib\cglib\3.2.5\cglib-3.2.5.jar;D:\Users\Daniel-Morgan\.m2\repository\org\ow2\asm\asm\5.0.3\asm-5.0.3.jar;D:\Users\Daniel-Morgan\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;D:\Users\Daniel-Morgan\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;D:\Users\Daniel-Morgan\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;D:\Users\Daniel-Morgan\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;D:\Users\Daniel-Morgan\.m2\repository\io\vavr\vavr\0.9.0\vavr-0.9.0.jar;D:\Users\Daniel-Morgan\.m2\repository\io\vavr\vavr-match\0.9.0\vavr-match-0.9.0.jar;D:\Users\Daniel-Morgan\.m2\repository\javax\xml\bind\jaxb-api\2.2.12\jaxb-api-2.2.12.jar;D:\Users\Daniel-Morgan\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar;D:\Users\Daniel-Morgan\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.0.1\jaxb-impl-2.3.0.1.jar;D:\Users\Daniel-Morgan\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;D:\Users\Daniel-Morgan\.m2\repository\org\mockito\mockito-core\2.23.4\mockito-core-2.23.4.jar;D:\Users\Daniel-Morgan\.m2\repository\net\serenity-bdd\serenity-report-resources\2.0.40\serenity-report-resources-2.0.40.jar;D:\Users\Daniel-Morgan\.m2\repository\net\serenity-bdd\serenity-model\2.0.40\serenity-model-2.0.40.jar;D:\Users\Daniel-Morgan\.m2\repository\commons-net\commons-net\3.6\commons-net-3.6.jar;D:\Users\Daniel-Morgan\.m2\repository\org\apache\commons\commons-text\1.6\commons-text-1.6.jar;D:\Users\Daniel-Morgan\.m2\repository\net\serenity-bdd\serenity-reports\2.0.40\serenity-reports-2.0.40.jar;D:\Users\Daniel-Morgan\.m2\repository\net\serenity-bdd\serenity-stats\2.0.40\serenity-stats-2.0.40.jar;D:\Users\Daniel-Morgan\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.2.51\kotlin-stdlib-1.2.51.jar;D:\Users\Daniel-Morgan\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.2.51\kotlin-stdlib-common-1.2.51.jar;D:\Users\Daniel-Morgan\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;D:\Users\Daniel-Morgan\.m2\repository\com\google\code\gson\gson\2.8.4\gson-2.8.4.jar;D:\Users\Daniel-Morgan\.m2\repository\org\seleniumhq\selenium\selenium-server\3.141.59\selenium-server-3.141.59.jar;D:\Users\Daniel-Morgan\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;D:\Users\Daniel-Morgan\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;D:\Users\Daniel-Morgan\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;D:\Users\Daniel-Morgan\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;D:\Users\Daniel-Morgan\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;D:\Users\Daniel-Morgan\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.4.12.v20180830\jetty-repacked-9.4.12.v20180830.jar;D:\Users\Daniel-Morgan\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;D:\Users\Daniel-Morgan\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;D:\Users\Daniel-Morgan\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;D:\Users\Daniel-Morgan\.m2\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;D:\Users\Daniel-Morgan\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;D:\Users\Daniel-Morgan\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;D:\Users\Daniel-Morgan\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;D:\Users\Daniel-Morgan\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;D:\Users\Daniel-Morgan\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;D:\Users\Daniel-Morgan\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;D:\Users\Daniel-Morgan\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;D:\Users\Daniel-Morgan\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;D:\Users\Daniel-Morgan\.m2\repository\com\paulhammant\ngwebdriver\1.1.4\ngwebdriver-1.1.4.jar;D:\Users\Daniel-Morgan\.m2\repository\com\codeborne\phantomjsdriver\1.4.4\phantomjsdriver-1.4.4.jar;D:\Users\Daniel-Morgan\.m2\repository\org\eclipse\jetty\jetty-util\9.4.8.v20171121\jetty-util-9.4.8.v20171121.jar;D:\Users\Daniel-Morgan\.m2\repository\org\eclipse\jetty\jetty-io\9.4.8.v20171121\jetty-io-9.4.8.v20171121.jar;D:\Users\Daniel-Morgan\.m2\repository\org\seleniumhq\selenium\htmlunit-driver\2.33.1\htmlunit-driver-2.33.1.jar;D:\Users\Daniel-Morgan\.m2\repository\io\appium\java-client\6.1.0\java-client-6.1.0.jar;D:\Users\Daniel-Morgan\.m2\repository\commons-validator\commons-validator\1.6\commons-validator-1.6.jar;D:\Users\Daniel-Morgan\.m2\repository\commons-beanutils\commons-beanutils\1.9.2\commons-beanutils-1.9.2.jar;D:\Users\Daniel-Morgan\.m2\repository\commons-digester\commons-digester\1.8.1\commons-digester-1.8.1.jar;D:\Users\Daniel-Morgan\.m2\repository\org\springframework\spring-context\5.0.5.RELEASE\spring-context-5.0.5.RELEASE.jar;D:\Users\Daniel-Morgan\.m2\repository\org\springframework\spring-aop\5.0.5.RELEASE\spring-aop-5.0.5.RELEASE.jar;D:\Users\Daniel-Morgan\.m2\repository\org\springframework\spring-beans\5.0.5.RELEASE\spring-beans-5.0.5.RELEASE.jar;D:\Users\Daniel-Morgan\.m2\repository\org\springframework\spring-core\5.0.5.RELEASE\spring-core-5.0.5.RELEASE.jar;D:\Users\Daniel-Morgan\.m2\repository\org\springframework\spring-jcl\5.0.5.RELEASE\spring-jcl-5.0.5.RELEASE.jar;D:\Users\Daniel-Morgan\.m2\repository\org\springframework\spring-expression\5.0.5.RELEASE\spring-expression-5.0.5.RELEASE.jar;D:\Users\Daniel-Morgan\.m2\repository\org\aspectj\aspectjweaver\1.9.1\aspectjweaver-1.9.1.jar;D:\Users\Daniel-Morgan\.m2\repository\org\openpnp\opencv\3.2.0-1\opencv-3.2.0-1.jar;D:\Users\Daniel-Morgan\.m2\repository\org\glassfish\tyrus\tyrus-core\1.13.1\tyrus-core-1.13.1.jar;D:\Users\Daniel-Morgan\.m2\repository\org\glassfish\tyrus\tyrus-spi\1.13.1\tyrus-spi-1.13.1.jar;D:\Users\Daniel-Morgan\.m2\repository\javax\websocket\javax.websocket-api\1.1\javax.websocket-api-1.1.jar;D:\Users\Daniel-Morgan\.m2\repository\org\codehaus\groovy\groovy\2.5.5\groovy-2.5.5.jar;D:\Users\Daniel-Morgan\.m2\repository\net\sf\opencsv\opencsv\2.0\opencsv-2.0.jar;D:\Users\Daniel-Morgan\.m2\repository\commons-beanutils\commons-beanutils-core\1.8.3\commons-beanutils-core-1.8.3.jar;D:\Users\Daniel-Morgan\.m2\repository\joda-time\joda-time\2.7\joda-time-2.7.jar;D:\Users\Daniel-Morgan\.m2\repository\com\thoughtworks\xstream\xstream\1.4.9\xstream-1.4.9.jar;D:\Users\Daniel-Morgan\.m2\repository\xmlpull\xmlpull\1.1.3.1\xmlpull-1.1.3.1.jar;D:\Users\Daniel-Morgan\.m2\repository\xpp3\xpp3_min\1.1.4c\xpp3_min-1.1.4c.jar;D:\Users\Daniel-Morgan\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;D:\Users\Daniel-Morgan\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;D:\Users\Daniel-Morgan\.m2\repository\org\freemarker\freemarker\2.3.28\freemarker-2.3.28.jar;D:\Users\Daniel-Morgan\.m2\repository\net\sourceforge\jexcelapi\jxl\2.6.12\jxl-2.6.12.jar;D:\Users\Daniel-Morgan\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;D:\Users\Daniel-Morgan\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;D:\Users\Daniel-Morgan\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.33\htmlunit-2.33.jar;D:\Users\Daniel-Morgan\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.33\htmlunit-core-js-2.33.jar;D:\Users\Daniel-Morgan\.m2\repository\net\sourceforge\htmlunit\neko-htmlunit\2.33\neko-htmlunit-2.33.jar;D:\Users\Daniel-Morgan\.m2\repository\xerces\xercesImpl\2.12.0\xercesImpl-2.12.0.jar;D:\Users\Daniel-Morgan\.m2\repository\net\sourceforge\htmlunit\htmlunit-cssparser\1.2.0\htmlunit-cssparser-1.2.0.jar;D:\Users\Daniel-Morgan\.m2\repository\org\eclipse\jetty\websocket\websocket-client\9.4.12.v20180830\websocket-client-9.4.12.v20180830.jar;D:\Users\Daniel-Morgan\.m2\repository\org\eclipse\jetty\jetty-client\9.4.12.v20180830\jetty-client-9.4.12.v20180830.jar;D:\Users\Daniel-Morgan\.m2\repository\org\eclipse\jetty\jetty-http\9.4.12.v20180830\jetty-http-9.4.12.v20180830.jar;D:\Users\Daniel-Morgan\.m2\repository\org\eclipse\jetty\jetty-xml\9.4.12.v20180830\jetty-xml-9.4.12.v20180830.jar;D:\Users\Daniel-Morgan\.m2\repository\org\eclipse\jetty\websocket\websocket-common\9.4.12.v20180830\websocket-common-9.4.12.v20180830.jar;D:\Users\Daniel-Morgan\.m2\repository\org\eclipse\jetty\websocket\websocket-api\9.4.12.v20180830\websocket-api-9.4.12.v20180830.jar;D:\Users\Daniel-Morgan\.m2\repository\org\apache\httpcomponents\httpclient\4.5.5\httpclient-4.5.5.jar;D:\Users\Daniel-Morgan\.m2\repository\org\apache\httpcomponents\httpcore\4.4.9\httpcore-4.4.9.jar;D:\Users\Daniel-Morgan\.m2\repository\org\apache\httpcomponents\httpmime\4.5.5\httpmime-4.5.5.jar;D:\Users\Daniel-Morgan\.m2\repository\org\fluentlenium\fluentlenium-core\0.10.2\fluentlenium-core-0.10.2.jar;D:\Users\Daniel-Morgan\.m2\repository\com\jhlabs\filters\2.0.235\filters-2.0.235.jar;D:\Users\Daniel-Morgan\.m2\repository\org\asciidoctor\asciidoctorj\1.5.6\asciidoctorj-1.5.6.jar;D:\Users\Daniel-Morgan\.m2\repository\org\jruby\jruby-complete\1.7.26\jruby-complete-1.7.26.jar;D:\Users\Daniel-Morgan\.m2\repository\org\imgscalr\imgscalr-lib\4.2\imgscalr-lib-4.2.jar;D:\Users\Daniel-Morgan\.m2\repository\javax\el\javax.el-api\2.2.4\javax.el-api-2.2.4.jar;D:\Users\Daniel-Morgan\.m2\repository\org\glassfish\web\javax.el\2.2.4\javax.el-2.2.4.jar;D:\Users\Daniel-Morgan\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;D:\Users\Daniel-Morgan\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;D:\Users\Daniel-Morgan\.m2\repository\org\awaitility\awaitility\3.1.0\awaitility-3.1.0.jar;D:\Users\Daniel-Morgan\.m2\repository\com\typesafe\config\1.3.1\config-1.3.1.jar;D:\Users\Daniel-Morgan\.m2\repository\org\jsoup\jsoup\1.10.3\jsoup-1.10.3.jar;D:\Users\Daniel-Morgan\.m2\repository\com\google\jimfs\jimfs\1.1\jimfs-1.1.jar;D:\Users\Daniel-Morgan\.m2\repository\es\nitaur\markdown\txtmark\0.16\txtmark-0.16.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-all\0.34.30\flexmark-all-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark\0.34.30\flexmark-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-abbreviation\0.34.30\flexmark-ext-abbreviation-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-admonition\0.34.30\flexmark-ext-admonition-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-anchorlink\0.34.30\flexmark-ext-anchorlink-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-aside\0.34.30\flexmark-ext-aside-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-attributes\0.34.30\flexmark-ext-attributes-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-autolink\0.34.30\flexmark-ext-autolink-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\org\nibor\autolink\autolink\0.6.0\autolink-0.6.0.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-definition\0.34.30\flexmark-ext-definition-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-emoji\0.34.30\flexmark-ext-emoji-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-enumerated-reference\0.34.30\flexmark-ext-enumerated-reference-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-escaped-character\0.34.30\flexmark-ext-escaped-character-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-footnotes\0.34.30\flexmark-ext-footnotes-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-issues\0.34.30\flexmark-ext-gfm-issues-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-strikethrough\0.34.30\flexmark-ext-gfm-strikethrough-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-tables\0.34.30\flexmark-ext-gfm-tables-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-tasklist\0.34.30\flexmark-ext-gfm-tasklist-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-users\0.34.30\flexmark-ext-gfm-users-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-gitlab\0.34.30\flexmark-ext-gitlab-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-front-matter\0.34.30\flexmark-ext-jekyll-front-matter-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-tag\0.34.30\flexmark-ext-jekyll-tag-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-media-tags\0.34.30\flexmark-ext-media-tags-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-test-util\0.34.30\flexmark-test-util-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-ins\0.34.30\flexmark-ext-ins-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-xwiki-macros\0.34.30\flexmark-ext-xwiki-macros-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-superscript\0.34.30\flexmark-ext-superscript-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-tables\0.34.30\flexmark-ext-tables-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-toc\0.34.30\flexmark-ext-toc-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-typographic\0.34.30\flexmark-ext-typographic-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-wikilink\0.34.30\flexmark-ext-wikilink-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-yaml-front-matter\0.34.30\flexmark-ext-yaml-front-matter-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-ext-youtube-embedded\0.34.30\flexmark-ext-youtube-embedded-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-formatter\0.34.30\flexmark-formatter-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-html-parser\0.34.30\flexmark-html-parser-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-jira-converter\0.34.30\flexmark-jira-converter-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-pdf-converter\0.34.30\flexmark-pdf-converter-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\openhtmltopdf\openhtmltopdf-core\0.0.1-RC13\openhtmltopdf-core-0.0.1-RC13.jar;D:\Users\Daniel-Morgan\.m2\repository\com\openhtmltopdf\openhtmltopdf-pdfbox\0.0.1-RC13\openhtmltopdf-pdfbox-0.0.1-RC13.jar;D:\Users\Daniel-Morgan\.m2\repository\org\apache\pdfbox\pdfbox\2.0.8\pdfbox-2.0.8.jar;D:\Users\Daniel-Morgan\.m2\repository\org\apache\pdfbox\fontbox\2.0.8\fontbox-2.0.8.jar;D:\Users\Daniel-Morgan\.m2\repository\org\apache\pdfbox\xmpbox\2.0.8\xmpbox-2.0.8.jar;D:\Users\Daniel-Morgan\.m2\repository\de\rototor\pdfbox\graphics2d\0.12\graphics2d-0.12.jar;D:\Users\Daniel-Morgan\.m2\repository\com\openhtmltopdf\openhtmltopdf-rtl-support\0.0.1-RC13\openhtmltopdf-rtl-support-0.0.1-RC13.jar;D:\Users\Daniel-Morgan\.m2\repository\com\ibm\icu\icu4j\59.1\icu4j-59.1.jar;D:\Users\Daniel-Morgan\.m2\repository\com\openhtmltopdf\openhtmltopdf-jsoup-dom-converter\0.0.1-RC13\openhtmltopdf-jsoup-dom-converter-0.0.1-RC13.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-profile-pegdown\0.34.30\flexmark-profile-pegdown-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-util\0.34.30\flexmark-util-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\com\vladsch\flexmark\flexmark-youtrack-converter\0.34.30\flexmark-youtrack-converter-0.34.30.jar;D:\Users\Daniel-Morgan\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;D:\Users\Daniel-Morgan\.m2\repository\io\cucumber\cucumber-java\4.2.0\cucumber-java-4.2.0.jar;D:\Users\Daniel-Morgan\.m2\repository\io\cucumber\cucumber-core\4.2.0\cucumber-core-4.2.0.jar;D:\Users\Daniel-Morgan\.m2\repository\io\cucumber\cucumber-html\0.2.7\cucumber-html-0.2.7.jar;D:\Users\Daniel-Morgan\.m2\repository\io\cucumber\gherkin\5.1.0\gherkin-5.1.0.jar;D:\Users\Daniel-Morgan\.m2\repository\io\cucumber\tag-expressions\1.1.1\tag-expressions-1.1.1.jar;D:\Users\Daniel-Morgan\.m2\repository\io\cucumber\cucumber-expressions\6.2.0\cucumber-expressions-6.2.0.jar;D:\Users\Daniel-Morgan\.m2\repository\io\cucumber\datatable\1.1.7\datatable-1.1.7.jar;D:\Users\Daniel-Morgan\.m2\repository\io\cucumber\datatable-dependencies\1.1.7\datatable-dependencies-1.1.7.jar;D:\Users\Daniel-Morgan\.m2\repository\io\cucumber\cucumber-junit\4.2.0\cucumber-junit-4.2.0.jar;D:\Users\Daniel-Morgan\.m2\repository\net\serenity-bdd\serenity-junit\2.0.40\serenity-junit-2.0.40.jar;D:\Users\Daniel-Morgan\.m2\repository\net\serenity-bdd\serenity-screenplay\2.0.40\serenity-screenplay-2.0.40.jar;D:\Users\Daniel-Morgan\.m2\repository\uk\com\robust-it\cloning\1.9.10\cloning-1.9.10.jar;D:\Users\Daniel-Morgan\.m2\repository\net\serenity-bdd\serenity-screenplay-webdriver\2.0.40\serenity-screenplay-webdriver-2.0.40.jar;D:\Users\Daniel-Morgan\.m2\repository\net\serenity-bdd\serenity-cucumber4\1.0.6\serenity-cucumber4-1.0.6.jar;D:\Users\Daniel-Morgan\.m2\repository\io\cucumber\datatable-matchers\1.1.7\datatable-matchers-1.1.7.jar;D:\Users\Daniel-Morgan\.m2\repository\org\apache\commons\commons-csv\1.5\commons-csv-1.5.jar;D:\Users\Daniel-Morgan\.m2\repository\junit\junit\4.12\junit-4.12.jar;D:\Users\Daniel-Morgan\.m2\repository\org\assertj\assertj-core\3.6.2\assertj-core-3.6.2.jar;D:\Users\Daniel-Morgan\.m2\repository\org\hamcrest\hamcrest-all\1.3\hamcrest-all-1.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="D:\Users\Daniel-Morgan"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-01-19"/>
+    <property name="java.home" value="C:\Program Files\Amazon Corretto\jdk11.0.10_9"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\Users\Daniel-Morgan\Downloads\serenity-cucumber4-master-X\serenity-cucumber4-master"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="D:\Users\Daniel-Morgan\AppData\Local\Temp\1\surefire10761128196359162623\surefirebooter11880740567178801549.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.10+9-LTS"/>
+    <property name="user.name" value="Daniel-Morgan"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="webdriver.base.url" value=""/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-11.0.10.9.1"/>
+    <property name="localRepository" value="D:\Users\Daniel-Morgan\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-11/issues/"/>
+    <property name="java.io.tmpdir" value="D:\Users\Daniel-Morgan\AppData\Local\Temp\1\"/>
+    <property name="idea.version" value="2021.1.2"/>
+    <property name="java.version" value="11.0.10"/>
+    <property name="user.dir" value="D:\Users\Daniel-Morgan\Downloads\serenity-cucumber4-master-X\serenity-cucumber4-master"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="environment" value="single"/>
+    <property name="java.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.10_9\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Amazon Corretto\jdk11.0.10_9\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Amazon\cfn-bootstrap\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Git\cmd;C:\selenium-prerequisites\apache-maven-3.8.1\bin;C:\Program Files\Amazon Corretto\jdk11.0.10_9\lib\security\cacerts;C:\Program Files\dotnet\;C:\Ruby25-x64\bin;C:\Ruby27-x64\bin;D:\Users\Daniel-Morgan\AppData\Local\Microsoft\WindowsApps;D:\Users\Daniel-Morgan\.dotnet\tools;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="11.0.10+9-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="Booking managing absences" classname="Absences" time="15.108"/>
+  <testcase name="Create an absence reason" classname="Absence Reasons" time="8.818"/>
+  <testcase name="Create an loan agreement" classname="Loan Agreements" time="4.208"/>
+  <testcase name="Creating a payment" classname="Prepare Payroll" time="2.883"/>
+  <testcase name="Creating availability" classname="Overtime" time="4.679"/>
+  <testcase name="Editing availability" classname="Overtime" time="4.26"/>
+  <testcase name="Deleting availability" classname="Overtime" time="2.911"/>
+  <testcase name="Create an overtime reason" classname="Overtime" time="3.341"/>
+  <testcase name="Booking a Client Time Slot" classname="Client Time slot" time="5.052">
+    <error message="element click intercepted: Element &lt;button type=&quot;submit&quot; class=&quot;btn btn-logout&quot;&gt;...&lt;/button&gt; is not clickable at point (728, 39). Other element would receive the click: &lt;div id=&quot;jsoverlay&quot; style=&quot;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: headless chrome=91.0.4472.114)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;EC2AMAZ-0JU55CN&apos;, ip: &apos;172.17.7.203&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: D:\Users\Daniel-Morgan\AppD...}, goog:chromeOptions: {debuggerAddress: localhost:62076}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 7c115e4489ece418443f2151b9a97020" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button type="submit" class="btn btn-logout">...</button> is not clickable at point (728, 39). Other element would receive the click: <div id="jsoverlay" style="">...</div>
+  (Session info: headless chrome=91.0.4472.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EC2AMAZ-0JU55CN', ip: '172.17.7.203', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: D:\Users\Daniel-Morgan\AppD...}, goog:chromeOptions: {debuggerAddress: localhost:62076}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7c115e4489ece418443f2151b9a97020
+]]></error>
+    <system-out><![CDATA[13:21:21.654 [main] INFO  n.t.c.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Create an overtime reason
+----------------------------------------------------------------------------
+13:21:21.656 [main] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Booking a Client Time Slot
+-------------------------------------------------------------------(client-time-slot;booking-a-client-time-slot)
+13:21:21.667 [main] WARN  n.t.core.ThucydidesSystemProperty - Legacy property format detected for serenity.driver.capabilities, please use the serenity.* format instead.
+
+
+
+
+
+
+]]></system-out>
+    <system-err><![CDATA[Jul 07, 2021 1:21:21 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 07, 2021 1:21:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Editing a booked Client Time Slot" classname="Client Time slot" time="4.977"/>
+  <testcase name="Deleting a booked Client Time Slot" classname="Client Time slot" time="2.813"/>
+  <testcase name="Booking a Training Slot" classname="Training slot" time="4.737">
+    <error message="element click intercepted: Element &lt;button type=&quot;submit&quot; class=&quot;btn btn-logout&quot;&gt;...&lt;/button&gt; is not clickable at point (728, 39). Other element would receive the click: &lt;div id=&quot;jsoverlay&quot; style=&quot;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: headless chrome=91.0.4472.114)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;EC2AMAZ-0JU55CN&apos;, ip: &apos;172.17.7.203&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: D:\Users\Daniel-Morgan\AppD...}, goog:chromeOptions: {debuggerAddress: localhost:51322}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 630151c91a04bcf86c7f249b1c56e186" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button type="submit" class="btn btn-logout">...</button> is not clickable at point (728, 39). Other element would receive the click: <div id="jsoverlay" style="">...</div>
+  (Session info: headless chrome=91.0.4472.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EC2AMAZ-0JU55CN', ip: '172.17.7.203', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: D:\Users\Daniel-Morgan\AppD...}, goog:chromeOptions: {debuggerAddress: localhost:51322}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 630151c91a04bcf86c7f249b1c56e186
+]]></error>
+    <system-out><![CDATA[13:21:34.719 [main] INFO  n.t.c.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Deleting a booked Client Time Slot
+----------------------------------------------------------------------------
+13:21:34.722 [main] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Booking a Training Slot
+-------------------------------------------------------------------(training-slot;booking-a-training-slot)
+13:21:34.734 [main] WARN  n.t.core.ThucydidesSystemProperty - Legacy property format detected for serenity.driver.capabilities, please use the serenity.* format instead.
+
+
+
+
+
+
+]]></system-out>
+    <system-err><![CDATA[Jul 07, 2021 1:21:34 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 07, 2021 1:21:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Editing a booked Training Slot" classname="Training slot" time="4.683">
+    <error message="element click intercepted: Element &lt;button type=&quot;submit&quot; class=&quot;btn btn-logout&quot;&gt;...&lt;/button&gt; is not clickable at point (728, 39). Other element would receive the click: &lt;div id=&quot;jsoverlay&quot; style=&quot;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: headless chrome=91.0.4472.114)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;EC2AMAZ-0JU55CN&apos;, ip: &apos;172.17.7.203&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: D:\Users\Daniel-Morgan\AppD...}, goog:chromeOptions: {debuggerAddress: localhost:54716}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: afa554548a60c9b560393d1098427346" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button type="submit" class="btn btn-logout">...</button> is not clickable at point (728, 39). Other element would receive the click: <div id="jsoverlay" style="">...</div>
+  (Session info: headless chrome=91.0.4472.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EC2AMAZ-0JU55CN', ip: '172.17.7.203', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: D:\Users\Daniel-Morgan\AppD...}, goog:chromeOptions: {debuggerAddress: localhost:54716}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: afa554548a60c9b560393d1098427346
+]]></error>
+    <system-out><![CDATA[13:21:39.511 [main] ERROR n.t.c.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED WITH ERROR: Booking a Training Slot
+---------------------------------------------------------------------
+13:21:39.511 [main] ERROR n.t.c.steps.ConsoleLoggingListener - TEST FAILED AT STEP Log out
+13:21:39.512 [main] ERROR n.t.c.steps.ConsoleLoggingListener - element click intercepted: Element <button type="submit" class="btn btn-logout">...</button> is not clickable at point (728, 39). Other element would receive the click: <div id="jsoverlay" style="">...</div>
+13:21:39.515 [main] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Editing a booked Training Slot
+-------------------------------------------------------------------(training-slot;editing-a-booked-training-slot)
+13:21:39.528 [main] WARN  n.t.core.ThucydidesSystemProperty - Legacy property format detected for serenity.driver.capabilities, please use the serenity.* format instead.
+
+
+
+
+
+]]></system-out>
+    <system-err><![CDATA[Jul 07, 2021 1:21:39 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 07, 2021 1:21:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Deleting a booked Training Slot" classname="Training slot" time="2.825"/>
+  <testcase name="Booking a WOW Chat Slot" classname="Wow Chat slot" time="4.763">
+    <error message="element click intercepted: Element &lt;button type=&quot;submit&quot; class=&quot;btn btn-logout&quot;&gt;...&lt;/button&gt; is not clickable at point (728, 39). Other element would receive the click: &lt;div id=&quot;jsoverlay&quot; style=&quot;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: headless chrome=91.0.4472.114)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;EC2AMAZ-0JU55CN&apos;, ip: &apos;172.17.7.203&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: D:\Users\Daniel-Morgan\AppD...}, goog:chromeOptions: {debuggerAddress: localhost:56915}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5dbeddf1830a1155d8681c4b8afdf4c7" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button type="submit" class="btn btn-logout">...</button> is not clickable at point (728, 39). Other element would receive the click: <div id="jsoverlay" style="">...</div>
+  (Session info: headless chrome=91.0.4472.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EC2AMAZ-0JU55CN', ip: '172.17.7.203', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: D:\Users\Daniel-Morgan\AppD...}, goog:chromeOptions: {debuggerAddress: localhost:56915}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5dbeddf1830a1155d8681c4b8afdf4c7
+]]></error>
+    <system-out><![CDATA[13:21:47.120 [main] INFO  n.t.c.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Deleting a booked Training Slot
+----------------------------------------------------------------------------
+13:21:47.124 [main] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Booking a WOW Chat Slot
+-------------------------------------------------------------------(wow-chat-slot;booking-a-wow-chat-slot)
+13:21:47.133 [main] WARN  n.t.core.ThucydidesSystemProperty - Legacy property format detected for serenity.driver.capabilities, please use the serenity.* format instead.
+
+
+
+
+
+
+]]></system-out>
+    <system-err><![CDATA[Jul 07, 2021 1:21:47 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 07, 2021 1:21:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Editing a booked WOW Chat Slot" classname="Wow Chat slot" time="12.439">
+    <error message="Timed out after 5 seconds. Element not found&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;EC2AMAZ-0JU55CN&apos;, ip: &apos;172.17.7.203&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+Timed out after 5 seconds. Element not found
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EC2AMAZ-0JU55CN', ip: '172.17.7.203', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: driver.version: unknown
+</error>
+    <system-out><![CDATA[13:21:51.952 [main] ERROR n.t.c.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED WITH ERROR: Booking a WOW Chat Slot
+---------------------------------------------------------------------
+13:21:51.953 [main] ERROR n.t.c.steps.ConsoleLoggingListener - TEST FAILED AT STEP Log out
+13:21:51.953 [main] ERROR n.t.c.steps.ConsoleLoggingListener - element click intercepted: Element <button type="submit" class="btn btn-logout">...</button> is not clickable at point (728, 39). Other element would receive the click: <div id="jsoverlay" style="">...</div>
+13:21:51.956 [main] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Editing a booked WOW Chat Slot
+-------------------------------------------------------------------(wow-chat-slot;editing-a-booked-wow-chat-slot)
+13:21:51.966 [main] WARN  n.t.core.ThucydidesSystemProperty - Legacy property format detected for serenity.driver.capabilities, please use the serenity.* format instead.
+
+
+
+
+]]></system-out>
+    <system-err><![CDATA[Jul 07, 2021 1:21:51 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 07, 2021 1:21:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Deleting a booked WOW Chat Slot" classname="Wow Chat slot" time="3.665">
+    <error message="element click intercepted: Element &lt;button type=&quot;submit&quot; class=&quot;btn btn-logout&quot;&gt;...&lt;/button&gt; is not clickable at point (728, 15). Other element would receive the click: &lt;div class=&quot;jconfirm-holder&quot; style=&quot;padding-top: 40px; padding-bottom: 40px;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: headless chrome=91.0.4472.114)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;EC2AMAZ-0JU55CN&apos;, ip: &apos;172.17.7.203&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: D:\Users\Daniel-Morgan\AppD...}, goog:chromeOptions: {debuggerAddress: localhost:59727}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 7fe9118c58ad7549d483fc45eb7477fb" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button type="submit" class="btn btn-logout">...</button> is not clickable at point (728, 15). Other element would receive the click: <div class="jconfirm-holder" style="padding-top: 40px; padding-bottom: 40px;">...</div>
+  (Session info: headless chrome=91.0.4472.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EC2AMAZ-0JU55CN', ip: '172.17.7.203', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: D:\Users\Daniel-Morgan\AppD...}, goog:chromeOptions: {debuggerAddress: localhost:59727}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7fe9118c58ad7549d483fc45eb7477fb
+]]></error>
+    <system-out><![CDATA[13:22:04.425 [main] ERROR n.t.c.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED WITH ERROR: Editing a booked WOW Chat Slot
+---------------------------------------------------------------------
+13:22:04.426 [main] ERROR n.t.c.steps.ConsoleLoggingListener - TEST FAILED AT STEP And edits a WOW Chat Slot
+13:22:04.426 [main] ERROR n.t.c.steps.ConsoleLoggingListener - Timed out after 5 seconds. Element not found
+13:22:04.428 [main] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Deleting a booked WOW Chat Slot
+-------------------------------------------------------------------(wow-chat-slot;deleting-a-booked-wow-chat-slot)
+13:22:04.438 [main] WARN  n.t.core.ThucydidesSystemProperty - Legacy property format detected for serenity.driver.capabilities, please use the serenity.* format instead.
+
+
+
+
+
+]]></system-out>
+    <system-err><![CDATA[Jul 07, 2021 1:22:04 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 07, 2021 1:22:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Update Employee&apos;s Details" classname="Update Employee&apos;s Details" time="2.83">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+</error>
+    <system-out><![CDATA[13:22:08.146 [main] ERROR n.t.c.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED WITH ERROR: Deleting a booked WOW Chat Slot
+---------------------------------------------------------------------
+13:22:08.146 [main] ERROR n.t.c.steps.ConsoleLoggingListener - TEST FAILED AT STEP Log out
+13:22:08.147 [main] ERROR n.t.c.steps.ConsoleLoggingListener - element click intercepted: Element <button type="submit" class="btn btn-logout">...</button> is not clickable at point (728, 15). Other element would receive the click: <div class="jconfirm-holder" style="padding-top: 40px; padding-bottom: 40px;">...</div>
+13:22:08.149 [main] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Update Employee's Details
+-------------------------------------------------------------------(update-employee-s-details;update-employee-s-details)
+13:22:08.156 [main] WARN  n.t.core.ThucydidesSystemProperty - Legacy property format detected for serenity.driver.capabilities, please use the serenity.* format instead.
+
+
+
+
+]]></system-out>
+    <system-err><![CDATA[Jul 07, 2021 1:22:08 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 07, 2021 1:22:08 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Booking a Holiday" classname="Booking Time Off" time="3.457"/>
+  <testcase name="Checking for a Holiday booking conflict" classname="Booking Time Off" time="2.744"/>
+  <testcase name="Cancelling a booked Holiday" classname="Booking Time Off" time="7.173">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[normalize-space()=&apos;Cancel&apos;]&quot;}&#10;  (Session info: headless chrome=91.0.4472.114)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;EC2AMAZ-0JU55CN&apos;, ip: &apos;172.17.7.203&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: D:\Users\Daniel-Morgan\AppD...}, goog:chromeOptions: {debuggerAddress: localhost:51562}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 68520cf496d45c8aa2b9252c727428e4&#10;*** Element info: {Using=xpath, value=//button[normalize-space()=&apos;Cancel&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//button[normalize-space()='Cancel']"}
+  (Session info: headless chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EC2AMAZ-0JU55CN', ip: '172.17.7.203', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: D:\Users\Daniel-Morgan\AppD...}, goog:chromeOptions: {debuggerAddress: localhost:51562}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 68520cf496d45c8aa2b9252c727428e4
+*** Element info: {Using=xpath, value=//button[normalize-space()='Cancel']}
+</error>
+    <system-out><![CDATA[13:22:17.324 [main] INFO  n.t.c.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Checking for a Holiday booking conflict
+----------------------------------------------------------------------------
+13:22:17.326 [main] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Cancelling a booked Holiday
+-------------------------------------------------------------------(booking-time-off;cancelling-a-booked-holiday)
+13:22:17.333 [main] WARN  n.t.core.ThucydidesSystemProperty - Legacy property format detected for serenity.driver.capabilities, please use the serenity.* format instead.
+
+
+
+
+]]></system-out>
+    <system-err><![CDATA[Jul 07, 2021 1:22:17 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 07, 2021 1:22:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Booking Time in Lieu" classname="Booking Time Off" time="2.703"/>
+  <testcase name="Checking for Time in Lieu booking conflict" classname="Booking Time Off" time="2.765"/>
+  <testcase name="Cancelling booked Time In Lieu" classname="Booking Time Off" time="7.344">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[normalize-space()=&apos;Cancel&apos;]&quot;}&#10;  (Session info: headless chrome=91.0.4472.114)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;EC2AMAZ-0JU55CN&apos;, ip: &apos;172.17.7.203&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: D:\Users\Daniel-Morgan\AppD...}, goog:chromeOptions: {debuggerAddress: localhost:60402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4851e3f35dcd02596ed1a0558d3e20bf&#10;*** Element info: {Using=xpath, value=//button[normalize-space()=&apos;Cancel&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//button[normalize-space()='Cancel']"}
+  (Session info: headless chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EC2AMAZ-0JU55CN', ip: '172.17.7.203', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: D:\Users\Daniel-Morgan\AppD...}, goog:chromeOptions: {debuggerAddress: localhost:60402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4851e3f35dcd02596ed1a0558d3e20bf
+*** Element info: {Using=xpath, value=//button[normalize-space()='Cancel']}
+</error>
+    <system-out><![CDATA[13:22:30.086 [main] INFO  n.t.c.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Checking for Time in Lieu booking conflict
+----------------------------------------------------------------------------
+13:22:30.088 [main] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Cancelling booked Time In Lieu
+-------------------------------------------------------------------(booking-time-off;cancelling-booked-time-in-lieu)
+13:22:30.094 [main] WARN  n.t.core.ThucydidesSystemProperty - Legacy property format detected for serenity.driver.capabilities, please use the serenity.* format instead.
+
+
+
+
+]]></system-out>
+    <system-err><![CDATA[Jul 07, 2021 1:22:30 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 07, 2021 1:22:30 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Booking an Appointment" classname="Booking Time Off" time="3.186"/>
+  <testcase name="Checking for a Appointment booking conflict" classname="Booking Time Off" time="3.066"/>
+  <testcase name="Cancelling booked Appointment" classname="Booking Time Off" time="7.219">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[normalize-space()=&apos;Cancel&apos;]&quot;}&#10;  (Session info: headless chrome=91.0.4472.114)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;EC2AMAZ-0JU55CN&apos;, ip: &apos;172.17.7.203&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: D:\Users\Daniel-Morgan\AppD...}, goog:chromeOptions: {debuggerAddress: localhost:56207}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ae1c0afe840093cecd085ebfbc8b7d20&#10;*** Element info: {Using=xpath, value=//button[normalize-space()=&apos;Cancel&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//button[normalize-space()='Cancel']"}
+  (Session info: headless chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EC2AMAZ-0JU55CN', ip: '172.17.7.203', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: D:\Users\Daniel-Morgan\AppD...}, goog:chromeOptions: {debuggerAddress: localhost:56207}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ae1c0afe840093cecd085ebfbc8b7d20
+*** Element info: {Using=xpath, value=//button[normalize-space()='Cancel']}
+</error>
+    <system-out><![CDATA[13:22:43.833 [main] INFO  n.t.c.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Checking for a Appointment booking conflict
+----------------------------------------------------------------------------
+13:22:43.835 [main] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Cancelling booked Appointment
+-------------------------------------------------------------------(booking-time-off;cancelling-booked-appointment)
+13:22:43.840 [main] WARN  n.t.core.ThucydidesSystemProperty - Legacy property format detected for serenity.driver.capabilities, please use the serenity.* format instead.
+
+
+
+
+]]></system-out>
+    <system-err><![CDATA[Jul 07, 2021 1:22:43 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 07, 2021 1:22:44 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Log as an Admin User" classname="Logging in and out" time="1.86"/>
+  <testcase name="Searching for a term" classname="Search by keyword" time="2.327"/>
+</testsuite>
